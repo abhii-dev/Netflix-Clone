@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000;
+    color: #fff;
+    
+}
+
+
+/* MAIN */
+.main{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(header-image.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+nav .logo{
+    width: 114px;
+    position: relative;
+    z-index: 10;
+   
+}
+.btn{
+    width: 100px;
+    height: 32px;
+    font-size: 13px;
+    border: 0.1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px; 
+     
+}
+.btn img{
+    width: 10px;
+    
+}
+.btnn{
+    width: 77px;
+    height: 32px;
+    color: white;
+    background-color: red;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    font-size: 24px;
+
+}
+.section h1{
+    font-size: 48px;
+    font-weight:900;
+    margin-bottom: 20px;
+}
+.section p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+form{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.section form .email{
+    height: 56px;
+    width: 370px;
+    background-color: transparent;
+    border: 0.1px solid red ;
+    border-radius: 4px;
+    margin-top: 20px;  
+    color: white;
+    
+}
+.btn2{
+    height: 56px;
+    width: 208px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.section form .email:hover{
+    border: 0.1px solid white
+}
+.btn2:hover{
+    cursor: pointer;
+}
+.line{
+    height: 8px;
+    background-color: #303030;
+}
+
+/* FEATURES*/
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}  
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.image-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.image-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2{
+    font-size: 48px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.features p{
+    font-size: 24px;
+}
+
+/* Question Section */
+
+.que-sec{
+    font-size: 18px;
+    padding: 10px 12%;
+    text-align: center;
+}
+.que-sec h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+.questions{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.questions li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.questions li label{
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.questions .content{
+    background: #303030;
+    text-align: left;
+    padding: 0px 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s ;
+}
+.questions input[type="radio"]:checked+label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.questions input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+}
+
+/* FOOT */
+.foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    margin-bottom: 60px;
+}
+.foot .email{
+    height: 56px;
+    width: 370px;
+    background-color: transparent;
+    border: 0.1px solid red ;
+    border-radius: 4px;
+    margin-top: 20px;  
+    color: white;
+
+}
+.foot .btn2{
+    height: 56px;
+    width: 208px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/* FOOTER */
+
+.footer{
+    border-top: 6px solid #333 ;
+    padding: 50px 15% 10px;
+
+}
+.footer h3{
+    font-size: 20px;
+    color: #FFFFFFB3;
+}
+.footer h3 span{
+    text-decoration: underline;
+}
+.lists{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.lists ul li{
+    list-style: none;
+    padding: 2px;
+    color:#FFFFFFB3;
+}
+
+.lang-btnn{
+    width: 123px;
+    height: 32px;
+    font-size: 13px;
+    border: 0.1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px; 
+    margin-top: 20px; 
+}
+.lang-btnn img{
+    width: 10px;
+    margin-left: 55px;
+}
+.rights{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #FFFFFFB3;
+}
+
+/* Resposiveness */
+
+@media only screen and (max-width: 630px){
+    form{
+        display: block;
+    }
+     .foot{
+        display: block;
+    }
+    nav .logo{
+        width: 89px;
+        height: 24px;
+    }
+    .btn{
+        width: 70px;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        font-size: 18px;
+    
+    }
+    .section h1{
+        font-size: 32px;
+        text-align: center;
+
+    }
+    .section p{
+        font-size: 18px;
+        margin-top: 20px;
+        text-align: center;
+        padding: 5px 90px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section form .email{
+        width: 300px;
+        height: 50px;
+    }
+    .btn2{
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .features h2{
+        font-size: 32px;
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .text-col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .lists{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+
+    }
+    .foot p{
+        font-size: 17px;
+        text-align: center;
+
+    }
+    .foot .email{
+        width: 300px;
+        height: 50px;
+    }
+    .foot .btn2{
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .que-sec h2{
+        font-size: 32px;
+    }
+  
+
+
+
+}
+    
+@media only screen and (max-width: 780px){
+   
+     .foot{
+        display: block;
+    }
+    .section h1{
+        font-size: 30px;
+        text-align: center;
+        text-align: center;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 170px;
+        font-size: 18px;
+    
+    }
+
+}
